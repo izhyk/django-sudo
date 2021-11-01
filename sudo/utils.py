@@ -8,10 +8,10 @@ sudo.utils
 import unicodedata
 
 from django.core.signing import BadSignature
-from django.utils import six
+import six
 from django.utils.crypto import get_random_string, constant_time_compare
 from django.utils.encoding import force_text
-from django.utils.six.moves.urllib.parse import urlparse
+from six.moves.urllib.parse import urlparse
 
 from sudo.settings import COOKIE_NAME, COOKIE_AGE, COOKIE_SALT
 
